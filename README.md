@@ -8,14 +8,14 @@ This role developed and tested with following Ansible versions:
 
 | Name                                                   | Version         |
 |--------------------------------------------------------|-----------------|
-| [ansible](https://pypi.org/project/ansible-base/)      | ```>= 2.9.13``` |
-| [ansible-base](https://pypi.org/project/ansible-base/) | ```>= 2.10.1``` |
+| [ansible](https://pypi.org/project/ansible-base/)      | ```>= 2.9.27``` |
+
 
 Other Ansible versions was not tested but will probably work.
 
 ## Installation
 
-Use ```ansible-galaxy install igor_nikiforov.etcd``` to install the latest stable release of role.
+Use ```ansible-galaxy install dockpack.base_etcd``` to install the latest stable release of role.
 
 You could also install it from requirements ```ansible-galaxy install -r requirements.yml```:
 
@@ -23,17 +23,16 @@ You could also install it from requirements ```ansible-galaxy install -r require
 # requirements.yml
 ---
 roles:
-  - name: igor_nikiforov.etcd
-    version: v1.0.0
+  - name: dockpack.base_etcd
 ```
 
 ## Platforms
 
 | Name   | Version             |
 |--------|---------------------|
-| Debian | ```buster```        |
-| Ubuntu | ```focal, groovy``` |
-| CentOS | ```7.4+, 8```       |
+| Debian | ```buster, bullseye```        |
+| Ubuntu | ```focal, jammy``` |
+| CentOS | ```7.4+, stream8```       |
 | RedHat | ```7.4+, 8```       |
 
 Other OS distributions was not tested but will probably work. In case if not please raise a PR!
@@ -165,3 +164,4 @@ MIT
 ## Author Information
 
 [Igor Nikiforov](https://github.com/igor-nikiforov)
+[Bas Meijer](https://github.com/bbaassssiiee)
