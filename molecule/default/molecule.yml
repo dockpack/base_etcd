@@ -32,8 +32,7 @@ platforms:
   - name: etcd-bullseye
     image: dokken/debian-11
     command: /lib/systemd/systemd
-    capabilities:
-      - SYS_ADMIN
+    privileged: true
     tmpfs:
       - /run
       - /tmp
@@ -42,8 +41,7 @@ platforms:
   - name: etcd-buster
     image: dokken/debian-10
     command: /lib/systemd/systemd
-    capabilities:
-      - SYS_ADMIN
+    privileged: true
     tmpfs:
       - /run
       - /tmp
