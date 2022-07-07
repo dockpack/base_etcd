@@ -1,0 +1,14 @@
+# these python extensions are for testing
+wheel
+tox
+attrs>=19.2.0
+rich>=10.0.0,<11.0.0
+sh==1.12.14
+yamllint==1.26.3
+ansible-lint==5.4.0
+molecule==4.0.0
+molecule-docker
+ansible-later
+molecule
+molecule-docker
+docker>=4.3.1
